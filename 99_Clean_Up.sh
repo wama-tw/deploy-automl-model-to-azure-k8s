@@ -8,5 +8,5 @@ echo "\n"
 echo "\n"
 echo " ===== Clean Up Resource ====="
 az acr delete --name $ACR_NAME -g $RESOURCE_GROUP --yes
-az aks delete --name $AKS_NAME -g $RESOURCE_GROUP
+az aks delete --name $AKS_NAME -g $RESOURCE_GROUP --yes
 kubectl config delete-context $AKS_NAME
